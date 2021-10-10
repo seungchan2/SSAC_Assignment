@@ -7,5 +7,6 @@
 |3|2021.10.05|배달의 민족|Navigation Controller, TabBar Controller|
 |4|2021.10.06|감정 다이어리|User Defaults, StackView|
 |5|2021.10.07	|기념일 계산기|Date Picker|
+|6|2021.10.07	|물 마시기|UIAlert, UserDefaults,Notification, IQKeyboardManager, TextFieldEffects(HoshiTextField)|
 
 
