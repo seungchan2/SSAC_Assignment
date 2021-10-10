@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "IQKeyboardManagerSwift",
+        "repositoryURL": "https://github.com/hackiftekhar/IQKeyboardManager.git",
+        "state": {
+          "branch": "master",
+          "revision": "54814368ae1a94bbc948cb197fda86a2ecb856c9",
+          "version": null
+        }
+      },
+      {
+        "package": "TextFieldEffects",
+        "repositoryURL": "https://github.com/raulriera/TextFieldEffects.git",
+        "state": {
+          "branch": "master",
+          "revision": "6bcda6335403c228b02b04ed8ba5225460762edb",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
