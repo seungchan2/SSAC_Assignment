@@ -8,5 +8,6 @@
 |4|2021.10.06|감정 다이어리|User Defaults, StackView|
 |5|2021.10.07	|기념일 계산기|Date Picker|
 |6|2021.10.07	|[물 마시기](https://github.com/seungchan2/SSAC_Assignment/tree/main/Day9_Assignment-DrinkWater)|UIAlert, UserDefaults, IQKeyboardManager, TextFieldEffects(HoshiTextField)|
+|7|2021.10.12|테이블 뷰 (인스펙터 / 코드)|UITableView|
 
 
