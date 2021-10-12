@@ -56,7 +56,6 @@
 				0B3252A417BC697657881E6E /* Pods-Day9_Assignment-DrinkWater.debug.xcconfig */,
 				CD251AAF037FD895C78B77C3 /* Pods-Day9_Assignment-DrinkWater.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -193,8 +192,8 @@
 			);
 			mainGroup = EC4E32B82712B55500690E46;
 			packageReferences = (
-				EC4E331B2712DF7900690E46 /* XCRemoteSwiftPackageReference "TextFieldEffects.git" */,
-				EC4E335E27132D4800690E46 /* XCRemoteSwiftPackageReference "IQKeyboardManager.git" */,
+				EC4E331B2712DF7900690E46 /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
+				EC4E335E27132D4800690E46 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = EC4E32C22712B55500690E46 /* Products */;
 			projectDirPath = "";
@@ -428,6 +427,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +457,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -494,7 +495,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EC4E331B2712DF7900690E46 /* XCRemoteSwiftPackageReference "TextFieldEffects.git" */ = {
+		EC4E331B2712DF7900690E46 /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/raulriera/TextFieldEffects.git";
 			requirement = {
@@ -502,7 +503,7 @@
 				kind = branch;
 			};
 		};
-		EC4E335E27132D4800690E46 /* XCRemoteSwiftPackageReference "IQKeyboardManager.git" */ = {
+		EC4E335E27132D4800690E46 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
 			requirement = {
@@ -515,7 +516,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		EC4E331C2712DF7900690E46 /* TextFieldEffects */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EC4E331B2712DF7900690E46 /* XCRemoteSwiftPackageReference "TextFieldEffects.git" */;
+			package = EC4E331B2712DF7900690E46 /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
 			productName = TextFieldEffects;
 		};
 /* End XCSwiftPackageProductDependency section */
