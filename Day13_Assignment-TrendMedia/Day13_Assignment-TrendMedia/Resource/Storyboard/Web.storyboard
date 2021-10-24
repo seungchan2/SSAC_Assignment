@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController restorationIdentifier="WebViewController" storyboardIdentifier="WebViewController" id="Y6W-OH-hqX" customClass="WebViewController" customModule="Day13_Assignment_TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ykF-bP-E9m">
+                                <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mf4-6P-ej6">
+                                <rect key="frame" x="0.0" y="95" width="414" height="718"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5IZ-Mh-wPP">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem title="Item" image="xmark" catalog="system" id="cxz-wT-V8N">
+                                        <connections>
+                                            <action selector="dismissButtonClicked:" destination="Y6W-OH-hqX" id="C4B-yW-gkp"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Xxa-kX-NHg"/>
+                                    <barButtonItem title="Item" image="arrow.backward" catalog="system" id="A5g-vg-HZz">
+                                        <connections>
+                                            <action selector="goBackButtonClicked:" destination="Y6W-OH-hqX" id="HN4-BO-519"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="LZh-GT-Y8a"/>
+                                    <barButtonItem title="Item" image="arrow.clockwise" catalog="system" id="jAa-eN-g2d">
+                                        <connections>
+                                            <action selector="reloadButtonClicked:" destination="Y6W-OH-hqX" id="kxN-31-Qto"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="nKG-jF-jAA"/>
+                                    <barButtonItem title="Item" image="arrow.right" catalog="system" id="3aI-4f-uOX">
+                                        <connections>
+                                            <action selector="goForwardButtonClicked:" destination="Y6W-OH-hqX" id="0Hh-TV-sA8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ykF-bP-E9m" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="2hd-Yx-yMg"/>
+                            <constraint firstItem="ykF-bP-E9m" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="DrU-9k-fcq"/>
+                            <constraint firstItem="mf4-6P-ej6" firstAttribute="top" secondItem="ykF-bP-E9m" secondAttribute="bottom" id="NXu-Ze-5pv"/>
+                            <constraint firstItem="5IZ-Mh-wPP" firstAttribute="top" secondItem="mf4-6P-ej6" secondAttribute="bottom" id="SbJ-1b-2pS"/>
+                            <constraint firstItem="mf4-6P-ej6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Wvc-lr-haf"/>
+                            <constraint firstItem="5IZ-Mh-wPP" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="jHW-5Q-OuD"/>
+                            <constraint firstItem="5IZ-Mh-wPP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="kaQ-w1-8hJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mf4-6P-ej6" secondAttribute="trailing" id="mSg-aQ-ReL"/>
+                            <constraint firstItem="5IZ-Mh-wPP" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="srV-XJ-AQg"/>
+                            <constraint firstItem="ykF-bP-E9m" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="tqK-Y3-ebW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="urlSearchBar" destination="ykF-bP-E9m" id="lLK-8z-FYa"/>
+                        <outlet property="webView" destination="mf4-6P-ej6" id="SXR-eS-wYG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
+        <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
+        <image name="arrow.right" catalog="system" width="128" height="98"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
