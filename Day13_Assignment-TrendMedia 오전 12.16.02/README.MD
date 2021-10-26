@@ -12,7 +12,7 @@ https://user-images.githubusercontent.com/80672561/138600619-9a36266d-313b-46ce-
 - [x] 인디케이터 추가
 
 
-### Day19
+### Day20
 https://user-images.githubusercontent.com/80672561/138853798-4050c634-6c60-4a72-bd4b-dacd8570cfdb.mov
 - [x] NAVER API
 - [x] MOVIE API
