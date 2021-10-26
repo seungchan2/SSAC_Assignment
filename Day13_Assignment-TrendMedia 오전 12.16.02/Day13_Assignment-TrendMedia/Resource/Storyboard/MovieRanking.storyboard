@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movie Ranking View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MovieRankingViewController" id="Y6W-OH-hqX" customClass="MovieRankingViewController" customModule="Day13_Assignment_TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4RS-rZ-yxr">
+                                <rect key="frame" x="20" y="54" width="374" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="20210101" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u21-V3-aTG">
+                                        <rect key="frame" x="0.0" y="0.0" width="315.5" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blY-GY-C98">
+                                        <rect key="frame" x="325.5" y="0.0" width="48.5" height="40"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="검색"/>
+                                        <connections>
+                                            <action selector="tapSearchButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="BBa-ZI-Um7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="blY-GY-C98" firstAttribute="leading" secondItem="u21-V3-aTG" secondAttribute="trailing" constant="10" id="7PM-3M-xEN"/>
+                                    <constraint firstAttribute="trailing" secondItem="blY-GY-C98" secondAttribute="trailing" id="RFH-JS-myB"/>
+                                    <constraint firstAttribute="height" constant="40" id="ynN-o8-JxU"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m56-x8-VrN">
+                                <rect key="frame" x="20" y="94" width="315.5" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Vvn-IZ-5Bq"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hij-12-KEF">
+                                <rect key="frame" x="0.0" y="115" width="414" height="781"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m56-x8-VrN" firstAttribute="trailing" secondItem="u21-V3-aTG" secondAttribute="trailing" id="1kZ-5T-WO9"/>
+                            <constraint firstItem="hij-12-KEF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="2sf-dR-rYC"/>
+                            <constraint firstItem="m56-x8-VrN" firstAttribute="top" secondItem="u21-V3-aTG" secondAttribute="bottom" id="4DF-TJ-wXO"/>
+                            <constraint firstItem="4RS-rZ-yxr" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="Uuz-Yy-RO2"/>
+                            <constraint firstItem="m56-x8-VrN" firstAttribute="leading" secondItem="u21-V3-aTG" secondAttribute="leading" id="Zlr-vc-AYZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4RS-rZ-yxr" secondAttribute="trailing" constant="20" id="cYU-9K-jL0"/>
+                            <constraint firstItem="4RS-rZ-yxr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="hnv-nf-J7O"/>
+                            <constraint firstItem="hij-12-KEF" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="tDr-mS-pTt"/>
+                            <constraint firstItem="hij-12-KEF" firstAttribute="top" secondItem="m56-x8-VrN" secondAttribute="bottom" constant="20" id="wzA-UY-2bA"/>
+                            <constraint firstAttribute="bottom" secondItem="hij-12-KEF" secondAttribute="bottom" id="zkZ-vP-ObD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="movieTextField" destination="u21-V3-aTG" id="wPl-rO-KZB"/>
+                        <outlet property="rankingTableView" destination="hij-12-KEF" id="IOf-uA-syw"/>
+                        <outlet property="searchButton" destination="blY-GY-C98" id="Vef-cr-myG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-14.492753623188406" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
